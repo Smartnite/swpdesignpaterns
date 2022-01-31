@@ -21,22 +21,24 @@ public class Main {
 
         measurement.addObserver(l1);
         measurement.addObserver(m1);
-        measurement.rangeReached(pace);
 
-        /*if (pace > 50 && pace < 101){ //for TopSpeed mode
+        if (pace > 50 && pace < 101){ //for TopSpeed mode
             motorcontroller.setAlgorythm(t1);
             motorcontroller.driving();
+            measurement.rangeReached(pace);
         } else if (pace > 100){ //for SuperSpar mode
             motorcontroller.setAlgorythm(s1);
             motorcontroller.driving();
+            measurement.rangeReached(pace);
         }
         else if (pace > 0 && pace < 51){ //for Economy Mode
             motorcontroller.setAlgorythm(e1);
             motorcontroller.driving();
+            measurement.rangeReached(pace);
         }
         else {
             System.out.println("Wrong Input"); //for negative pace
-        }*/
+        }
 
 
     }
